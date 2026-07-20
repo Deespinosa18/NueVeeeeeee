@@ -2,28 +2,945 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Primer Mes ❤️</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#080b1d"
+    >
+
+    <title>Para mi Valukstrunchspunchis ❤️</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="inicio">
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
 
-        <h1>Para la niña más hermosa ❤️</h1>
+    <div class="stars" id="stars"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
 
-        <p>
-            Hay personas que llegan para cambiarlo todo...
-            Tú llegaste para cambiar mi mundo.
-        </p>
+    <main>
 
-        <button id="comenzar">
-            Comenzar nuestra historia ✨
+        <!-- PANTALLA 1: INICIO -->
+
+        <section
+            class="screen centered active"
+            id="inicio"
+            data-screen="0"
+        >
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    20 de octubre de 2025 — 20 de julio de 2026
+                </p>
+
+                <div class="main-heart">❤️</div>
+
+                <h1>
+                    Para mi<br>
+                    <span>Valukstrunchspunchis</span>
+                </h1>
+
+                <p class="hero-text">
+                    Desde que llegaste, mis días tienen algo más bonito.
+                    Hoy celebramos nueve meses de amor, recuerdos,
+                    aprendizajes y momentos que quiero seguir viviendo contigo.
+                </p>
+
+                <div class="counter-card">
+                    <span id="daysTogether">0</span>
+                    <small>días escribiendo nuestra historia</small>
+                </div>
+
+                <button
+                    class="primary-button"
+                    data-next="cancion"
+                >
+                    Comenzar nuestra historia ✨
+                </button>
+
+                <p class="small-note">
+                    Te recomiendo abrir este regalo con audífonos 🎧
+                </p>
+
+            </div>
+        </section>
+
+        <!-- PANTALLA 2: CANCIÓN -->
+
+        <section
+            class="screen"
+            id="cancion"
+            data-screen="1"
+        >
+            <div class="section-container narrow">
+
+                <p class="eyebrow">Nuestra canción</p>
+
+                <div class="section-icon">🎵</div>
+
+                <h2>
+                    Así se siente estar contigo
+                </h2>
+
+                <div class="glass-card song-message">
+
+                    <p>
+                        Elegí esta canción porque su introducción me hace
+                        sentir como cuando estoy contigo.
+                    </p>
+
+                    <p>
+                        No tiene que pasar nada extraordinario ni hacen falta
+                        demasiadas palabras. Cuando estás cerca de mí,
+                        el amor simplemente está ahí.
+                    </p>
+
+                    <p>
+                        Se siente natural, tranquilo y presente, como si
+                        durante esos momentos todo estuviera exactamente
+                        en el lugar donde debe estar.
+                    </p>
+
+                </div>
+
+                <div class="spotify-container">
+
+                    <iframe
+                        src="https://open.spotify.com/embed/track/1wmsQ6EdiEAhVYd6upLoZs?utm_source=generator&theme=0"
+                        width="100%"
+                        height="152"
+                        frameborder="0"
+                        allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                        title="Nuestra canción en Spotify"
+                    ></iframe>
+
+                </div>
+
+                <p class="spotify-note">
+                    Presiona reproducir y continúa leyendo mientras suena
+                    nuestra canción ❤️
+                </p>
+
+                <button
+                    class="primary-button"
+                    data-next="carta"
+                >
+                    Abrir mi carta 💌
+                </button>
+
+            </div>
+        </section>
+
+        <!-- PANTALLA 3: CARTA -->
+
+        <section
+            class="screen"
+            id="carta"
+            data-screen="2"
+        >
+            <div class="section-container narrow">
+
+                <p class="eyebrow">Nuestros nueve meses</p>
+
+                <h2>
+                    Hay algo que quiero decirte
+                </h2>
+
+                <div
+                    class="letter-stage"
+                    id="letterStage"
+                >
+
+                    <button
+                        class="envelope"
+                        id="openLetter"
+                        aria-label="Abrir carta"
+                    >
+                        <span class="envelope-flap"></span>
+                        <span class="envelope-heart">❤️</span>
+                        <span class="envelope-label">
+                            Toca la carta para abrirla
+                        </span>
+                    </button>
+
+                    <article
+                        class="letter-paper"
+                        id="letterPaper"
+                    >
+
+                        <p class="letter-greeting">
+                            Mi Valukstrunchspunchis ❤️
+                        </p>
+
+                        <p>
+                            Hoy cumplimos nueve meses desde aquel 20 de octubre
+                            de 2025, y aunque para algunas personas nueve meses
+                            pueden parecer poco tiempo, para mí han significado
+                            muchísimo. Han sido suficientes para conocerte,
+                            admirarte, aprender de ti y comprender que lo que
+                            siento por ti va mucho más allá de una simple etapa
+                            bonita.
+                        </p>
+
+                        <p>
+                            En estos meses me has enseñado a crecer, a mejorar
+                            como persona y a entender que amar no consiste
+                            solamente en disfrutar los momentos felices.
+                            También significa aprender a escucharnos, tener
+                            paciencia, reconocer nuestros errores, superar
+                            juntos las dificultades y continuar eligiéndonos
+                            incluso después de los días complicados.
+                        </p>
+
+                        <p>
+                            Nuestra historia ha tenido momentos altos y bajos.
+                            No todo ha sido perfecto, pero precisamente por eso
+                            valoro todavía más que sigamos aquí. Hemos
+                            tropezado, nos hemos lastimado, nos hemos alejado y
+                            también hemos aprendido a regresar con una mirada
+                            distinta.
+                        </p>
+
+                        <p>
+                            Cada dificultad me ha hecho entender que no quiero
+                            rendirme contigo y que lo nuestro merece esfuerzo,
+                            cuidado y sinceridad.
+                        </p>
+
+                        <p>
+                            Desde que volvimos después de aquel problema,
+                            intento hacer las cosas de una manera diferente.
+                            Trato de corregir mis errores, de demostrarte con
+                            acciones lo que siento y de convertirme en una
+                            mejor versión de mí.
+                        </p>
+
+                        <p>
+                            No lo hago por obligación. Lo hago porque te amo,
+                            porque me importas y porque realmente quiero
+                            construir algo bonito contigo.
+                        </p>
+
+                        <p>
+                            Quiero que seas tú durante el resto de este año.
+                            Quiero que seas tú durante los siguientes años y,
+                            si la vida nos lo permite, quiero que seas tú
+                            durante el resto de mi vida.
+                        </p>
+
+                        <p>
+                            Cuando pienso en mi futuro, mis ojos y mi corazón
+                            apuntan hacia ti. No estoy buscando a alguien más,
+                            porque encontré en ti a la persona con quien quiero
+                            seguir creciendo, aprendiendo y compartiendo mi
+                            vida.
+                        </p>
+
+                        <p>
+                            Te admiro profundamente como mujer y como persona.
+                            Admiro tu manera de ser, tu fortaleza, tu esencia y
+                            todas esas pequeñas cosas que te convierten en
+                            alguien completamente irreemplazable.
+                        </p>
+
+                        <p>
+                            Para mí no existe otra persona que pueda ocupar tu
+                            lugar, porque ese lugar lo construiste tú desde el
+                            primer día.
+                        </p>
+
+                        <p>
+                            Desde que llegaste, algo dentro de mí supo que eras
+                            especial. Con el tiempo, esa sensación se convirtió
+                            en certeza.
+                        </p>
+
+                        <p>
+                            Hoy puedo decirte que te amo de verdad, que quiero
+                            que seas tú y que estoy dispuesto a seguir
+                            esforzándome para cuidar lo que tenemos.
+                        </p>
+
+                        <p>
+                            Gracias por estos nueve meses, por cada sonrisa,
+                            por cada conversación, por cada abrazo, por cada
+                            recuerdo y también por cada dificultad que nos
+                            enseñó a ser más fuertes.
+                        </p>
+
+                        <p>
+                            Gracias por mostrarme nuevas formas de amar y por
+                            permitirme compartir una parte de tu vida.
+                        </p>
+
+                        <p>
+                            Nueve meses pueden ser poco tiempo y, al mismo
+                            tiempo, pueden contener un mundo entero. El nuestro
+                            ha estado lleno de sentimientos, aprendizajes,
+                            errores, reconciliaciones y amor.
+                        </p>
+
+                        <p>
+                            Y aunque todavía nos queda mucho por vivir,
+                            yo quiero vivirlo contigo.
+                        </p>
+
+                        <p class="letter-closing">
+                            Te amo, mi Valukstrunchspunchis. Hoy, mañana y
+                            durante todos los días en los que me permitas
+                            seguir eligiéndote.
+                        </p>
+
+                        <p class="letter-signature">
+                            Con todo mi amor,<br>
+                            Diego ❤️
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <button
+                    class="primary-button hidden"
+                    id="continueLetter"
+                    data-next="recuerdos"
+                >
+                    Ver nuestros recuerdos 📸
+                </button>
+
+            </div>
+        </section>
+
+        <!-- PANTALLA 4: RECUERDOS -->
+
+        <section
+            class="screen"
+            id="recuerdos"
+            data-screen="3"
+        >
+            <div class="section-container">
+
+                <p class="eyebrow">Nuestros recuerdos</p>
+
+                <div class="section-icon">📸</div>
+
+                <h2>
+                    Pedacitos de nuestra historia
+                </h2>
+
+                <p class="section-description">
+                    Cada fotografía guarda algo que vivimos, algo que sentimos
+                    y una parte de todo lo que todavía quiero construir contigo.
+                </p>
+
+                <div class="memories-grid">
+
+                    <article class="memory-card">
+
+                        <button
+                            class="memory-photo"
+                            data-image="assets/images/foto1.jpeg"
+                            data-caption="Mi compañera de vida ❤️"
+                            aria-label="Abrir primera fotografía"
+                        >
+                            <img
+                                src="assets/images/foto1.jpeg"
+                                alt="Fotografía juntos con las camisetas de Ecuador"
+                            >
+                        </button>
+
+                        <div class="memory-content">
+
+                            <span class="memory-number">01</span>
+
+                            <h3>Mi compañera de vida ❤️</h3>
+
+                            <p>
+                                Más que mi novia, eres mi compañera de vida.
+                                La persona con quien quiero compartir mis días,
+                                mis logros, mis dificultades y cada etapa que
+                                todavía nos falta vivir.
+                            </p>
+
+                            <p>
+                                No importa lo que estemos haciendo; cualquier
+                                momento se vuelve especial cuando estoy contigo.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="memory-card">
+
+                        <button
+                            class="memory-photo"
+                            data-image="assets/images/foto2.jpeg"
+                            data-caption="Nuestra perrija y el segundo amor de mi vida 🐶"
+                            aria-label="Abrir segunda fotografía"
+                        >
+                            <img
+                                src="assets/images/foto2.jpeg"
+                                alt="Fotografía juntos con nuestra perrija"
+                            >
+                        </button>
+
+                        <div class="memory-content">
+
+                            <span class="memory-number">02</span>
+
+                            <h3>
+                                Nuestra perrija y el segundo amor de mi vida 🐶
+                            </h3>
+
+                            <p>
+                                Esta foto reúne cariño, felicidad y ese caos
+                                bonito que tanto me gusta compartir contigo.
+                            </p>
+
+                            <p>
+                                Verlas juntas hace que mi corazón se sienta
+                                todavía más lleno.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="memory-card">
+
+                        <button
+                            class="memory-photo"
+                            data-image="assets/images/foto3.jpeg"
+                            data-caption="Donde quiero estar 🤍"
+                            aria-label="Abrir tercera fotografía"
+                        >
+                            <img
+                                src="assets/images/foto3.jpeg"
+                                alt="Fotografía juntos en blanco y negro"
+                            >
+                        </button>
+
+                        <div class="memory-content">
+
+                            <span class="memory-number">03</span>
+
+                            <h3>Donde quiero estar 🤍</h3>
+
+                            <p>
+                                Entre tus brazos siento una tranquilidad que no
+                                encuentro en ningún otro lugar.
+                            </p>
+
+                            <p>
+                                Hay algo en tenerte cerca que convierte
+                                cualquier momento en hogar. Ahí, junto a ti,
+                                es donde siempre quiero estar.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="memory-card">
+
+                        <button
+                            class="memory-photo"
+                            data-image="assets/images/foto4.jpeg"
+                            data-caption="Las aventuras hechas y las pendientes por lograr 🌿"
+                            aria-label="Abrir cuarta fotografía"
+                        >
+                            <img
+                                src="assets/images/foto4.jpeg"
+                                alt="Fotografía juntos durante una aventura"
+                            >
+                        </button>
+
+                        <div class="memory-content">
+
+                            <span class="memory-number">04</span>
+
+                            <h3>
+                                Las aventuras hechas y las pendientes por lograr 🌿
+                            </h3>
+
+                            <p>
+                                Esta foto representa todas las aventuras que ya
+                                hemos vivido y cada una de las que todavía nos
+                                quedan pendientes.
+                            </p>
+
+                            <p>
+                                Quiero seguir descubriendo lugares, cumpliendo
+                                sueños y creando historias contigo, porque
+                                cualquier camino se vuelve más bonito cuando
+                                lo recorremos juntos.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="memory-card">
+
+                        <button
+                            class="memory-photo"
+                            data-image="assets/images/foto5.jpeg"
+                            data-caption="Tú y yo ✨"
+                            aria-label="Abrir quinta fotografía"
+                        >
+                            <img
+                                src="assets/images/foto5.jpeg"
+                                alt="Fotografía juntos frente al espejo"
+                            >
+                        </button>
+
+                        <div class="memory-content">
+
+                            <span class="memory-number">05</span>
+
+                            <h3>Tú y yo ✨</h3>
+
+                            <p>
+                                Me encanta vernos así: felices, juntos y siendo
+                                nosotros mismos.
+                            </p>
+
+                            <p>
+                                Esta foto me recuerda lo afortunado que soy de
+                                compartir mi vida contigo y lo mucho que deseo
+                                seguir construyendo recuerdos a tu lado.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <button
+                    class="primary-button"
+                    data-next="amor"
+                >
+                    Descubrir lo que amo de ti ❤️
+                </button>
+
+            </div>
+        </section>
+
+        <!-- PANTALLA 5: LO QUE AMO -->
+
+        <section
+            class="screen"
+            id="amor"
+            data-screen="4"
+        >
+            <div class="section-container">
+
+                <p class="eyebrow">Lo que amo de ti</p>
+
+                <div class="section-icon">❤️</div>
+
+                <h2>
+                    Algunas de las infinitas razones
+                </h2>
+
+                <p class="section-description">
+                    Toca cada tarjeta para descubrir lo que guarda.
+                </p>
+
+                <div class="love-grid">
+
+                    <button class="flip-card">
+                        <span class="flip-card-inner">
+
+                            <span class="flip-card-front">
+                                <span class="card-emoji">🌎</span>
+                                <strong>Tu forma de ver la vida</strong>
+                                <small>Toca para descubrir</small>
+                            </span>
+
+                            <span class="flip-card-back">
+                                Amo la manera en que observas el mundo,
+                                cómo piensas y cómo encuentras tu propia forma
+                                de enfrentar cada situación. Estar contigo me
+                                ha enseñado a mirar muchas cosas de una manera
+                                diferente.
+                            </span>
+
+                        </span>
+                    </button>
+
+                    <button class="flip-card">
+                        <span class="flip-card-inner">
+
+                            <span class="flip-card-front">
+                                <span class="card-emoji">😊</span>
+                                <strong>Tu sonrisa</strong>
+                                <small>Toca para descubrir</small>
+                            </span>
+
+                            <span class="flip-card-back">
+                                Amo tu sonrisa porque tiene la capacidad de
+                                cambiar completamente mi día. Verte feliz
+                                siempre termina haciéndome feliz a mí también.
+                            </span>
+
+                        </span>
+                    </button>
+
+                    <button class="flip-card">
+                        <span class="flip-card-inner">
+
+                            <span class="flip-card-front">
+                                <span class="card-emoji">➿</span>
+                                <strong>Tus churos</strong>
+                                <small>Toca para descubrir</small>
+                            </span>
+
+                            <span class="flip-card-back">
+                                Amo tus churos porque son una parte tan bonita
+                                y tan tuya. Me encanta mirarlos, tocarlos y
+                                verte con ellos de cualquier manera.
+                            </span>
+
+                        </span>
+                    </button>
+
+                    <button class="flip-card">
+                        <span class="flip-card-inner">
+
+                            <span class="flip-card-front">
+                                <span class="card-emoji">🌸</span>
+                                <strong>Tu olor</strong>
+                                <small>Toca para descubrir</small>
+                            </span>
+
+                            <span class="flip-card-back">
+                                Amo tu olor porque se ha convertido en una
+                                sensación de tranquilidad para mí. Cuando lo
+                                siento, inmediatamente pienso en ti, en tus
+                                abrazos y en lo bien que me siento contigo.
+                            </span>
+
+                        </span>
+                    </button>
+
+                    <button class="flip-card">
+                        <span class="flip-card-inner">
+
+                            <span class="flip-card-front">
+                                <span class="card-emoji">🔥</span>
+                                <strong>Tu cuerpo</strong>
+                                <small>Toca para descubrir</small>
+                            </span>
+
+                            <span class="flip-card-back">
+                                Amo tu cuerpo porque eres hermosa y porque cada
+                                abrazo, cada caricia y cada momento cerca de ti
+                                me hace sentir conectado contigo de una forma
+                                difícil de explicar.
+                            </span>
+
+                        </span>
+                    </button>
+
+                    <button class="flip-card">
+                        <span class="flip-card-inner">
+
+                            <span class="flip-card-front">
+                                <span class="card-emoji">✨</span>
+                                <strong>Tu dedicación</strong>
+                                <small>Toca para descubrir</small>
+                            </span>
+
+                            <span class="flip-card-back">
+                                Amo la entrega que pones en las cosas que
+                                realmente te importan. Cuando decides hacer
+                                algo, lo haces con sentimiento, esfuerzo y
+                                compromiso.
+                            </span>
+
+                        </span>
+                    </button>
+
+                    <button class="flip-card">
+                        <span class="flip-card-inner">
+
+                            <span class="flip-card-front">
+                                <span class="card-emoji">💪</span>
+                                <strong>Lo trabajadora que eres</strong>
+                                <small>Toca para descubrir</small>
+                            </span>
+
+                            <span class="flip-card-back">
+                                Admiro profundamente lo trabajadora que eres.
+                                Me encanta observar cómo luchas por tus
+                                objetivos y cómo sigues avanzando incluso
+                                cuando las cosas se vuelven difíciles.
+                            </span>
+
+                        </span>
+                    </button>
+
+                    <button class="flip-card">
+                        <span class="flip-card-inner">
+
+                            <span class="flip-card-front">
+                                <span class="card-emoji">🌱</span>
+                                <strong>Tu perseverancia</strong>
+                                <small>Toca para descubrir</small>
+                            </span>
+
+                            <span class="flip-card-back">
+                                Amo que no te rindas fácilmente. Tu
+                                perseverancia me inspira y me recuerda que
+                                siempre podemos seguir intentando, mejorar y
+                                salir adelante.
+                            </span>
+
+                        </span>
+                    </button>
+
+                    <button class="flip-card">
+                        <span class="flip-card-inner">
+
+                            <span class="flip-card-front">
+                                <span class="card-emoji">🏡</span>
+                                <strong>Cómo me haces sentir</strong>
+                                <small>Toca para descubrir</small>
+                            </span>
+
+                            <span class="flip-card-back">
+                                Amo la persona que soy cuando estoy contigo.
+                                Me haces sentir amado, acompañado y motivado a
+                                mejorar. Contigo entendí que el amor puede
+                                sentirse tranquilo, natural y verdadero.
+                            </span>
+
+                        </span>
+                    </button>
+
+                </div>
+
+                <button
+                    class="primary-button"
+                    data-next="odio"
+                >
+                    Ahora, lo que odio de amarte 😅
+                </button>
+
+            </div>
+        </section>
+
+        <!-- PANTALLA 6: LO QUE ODIO DE AMARTE -->
+
+        <section
+            class="screen"
+            id="odio"
+            data-screen="5"
+        >
+            <div class="section-container">
+
+                <p class="eyebrow">Lo que odio de amarte</p>
+
+                <div class="section-icon">🥺</div>
+
+                <h2>
+                    Las partes injustas de quererte tanto
+                </h2>
+
+                <p class="section-description">
+                    No son cosas que odie de ti. Son cosas que odio porque
+                    siempre quisiera tenerte un poco más cerca.
+                </p>
+
+                <div class="miss-grid">
+
+                    <article class="miss-card">
+                        <span>⏳</span>
+                        <h3>Que el tiempo pase demasiado rápido</h3>
+                        <p>
+                            Odio que cuando estoy contigo las horas parezcan
+                            minutos. Nunca siento que tenemos suficiente tiempo,
+                            porque siempre quiero quedarme un poco más.
+                        </p>
+                    </article>
+
+                    <article class="miss-card">
+                        <span>🚪</span>
+                        <h3>Tener que irme de tu casa</h3>
+                        <p>
+                            Odio el momento en que debo despedirme, levantarme
+                            y regresar a casa, cuando lo único que realmente
+                            quiero es quedarme contigo.
+                        </p>
+                    </article>
+
+                    <article class="miss-card">
+                        <span>🛏️</span>
+                        <h3>Tener solamente un fin de semana</h3>
+                        <p>
+                            Odio que a veces tengamos únicamente un fin de
+                            semana para dormir juntos, abrazarnos y sentir por
+                            unos días cómo sería compartir nuestra vida todos
+                            los días.
+                        </p>
+                    </article>
+
+                    <article class="miss-card">
+                        <span>🌙</span>
+                        <h3>Despertarme a las once de la noche</h3>
+                        <p>
+                            Odio tener que despertarme medio dormido a las once
+                            para irme porque todavía no vivo contigo. En esos
+                            momentos solo quiero volver a acostarme a tu lado y
+                            no moverme de ahí.
+                        </p>
+                    </article>
+
+                    <article class="miss-card">
+                        <span>🎬</span>
+                        <h3>No poder terminar una película</h3>
+                        <p>
+                            Odio que casi nunca podamos terminar una película,
+                            aunque en el fondo me encanta que siempre encontremos
+                            algo mejor que hacer: hablar, abrazarnos, dormir o
+                            simplemente estar juntos.
+                        </p>
+                    </article>
+
+                    <article class="miss-card">
+                        <span>🫂</span>
+                        <h3>No poder estar pegado a ti todo el tiempo</h3>
+                        <p>
+                            Odio que no pueda pasar cada momento abrazado a ti
+                            ni convertirme literalmente en una sola persona
+                            contigo. Cuando estoy cerca de ti, siempre quiero
+                            acercarme todavía más.
+                        </p>
+                    </article>
+
+                </div>
+
+                <button
+                    class="primary-button"
+                    data-next="final"
+                >
+                    Descubrir la sorpresa final 🎁
+                </button>
+
+            </div>
+        </section>
+
+        <!-- PANTALLA 7: SORPRESA FINAL -->
+
+        <section
+            class="screen centered"
+            id="final"
+            data-screen="6"
+        >
+            <div class="final-card">
+
+                <p class="eyebrow">Pero esto todavía no termina</p>
+
+                <div class="gift-icon">🎁</div>
+
+                <h2>
+                    Tengo una última pregunta
+                </h2>
+
+                <p>
+                    Después de recordar todo lo que hemos vivido y decirte
+                    algunas de las tantas cosas que amo de ti, quiero seguir
+                    celebrando nuestros nueve meses juntos.
+                </p>
+
+                <p class="final-name">
+                    Mi Valukstrunchspunchis...
+                </p>
+
+                <div class="invitation-card">
+
+                    <span class="invitation-icon">🍽️</span>
+
+                    <h3>
+                        ¿Aceptas tener una cita conmigo para ir a comer a Morelia?
+                    </h3>
+
+                    <p>
+                        20 de julio de 2026
+                    </p>
+
+                    <small>
+                        Prometo comida rica, muchos besos y seguir
+                        recordándote cuánto te amo.
+                    </small>
+
+                </div>
+
+                <button
+                    class="primary-button final-button"
+                    id="acceptDate"
+                >
+                    Sí, acepto la cita 💕
+                </button>
+
+                <div
+                    class="accepted-message hidden"
+                    id="acceptedMessage"
+                >
+                    <div class="accepted-heart">❤️</div>
+
+                    <h3>Sabía que dirías que sí</h3>
+
+                    <p>
+                        Prepárate, porque hoy seguimos celebrando nuestra historia.
+                    </p>
+
+                    <strong>
+                        Te amo, mi Valukstrunchspunchis.
+                    </strong>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- VENTANA PARA VER FOTOS GRANDES -->
+
+    <dialog
+        class="photo-dialog"
+        id="photoDialog"
+    >
+        <button
+            class="dialog-close"
+            id="closeDialog"
+            aria-label="Cerrar fotografía"
+        >
+            ×
         </button>
 
-    </div>
+        <img
+            id="dialogImage"
+            src=""
+            alt=""
+        >
+
+        <p id="dialogCaption"></p>
+    </dialog>
 
     <script src="script.js"></script>
 
